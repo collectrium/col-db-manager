@@ -14,9 +14,9 @@ cache:
   apt: true
   directories:
     - /home/travis/virtualenv/python2.7/lib/python2.7/site-packages
-
-install:
-  - easy_install -U tox==2.3.1
+    - /home/travis/virtualenv/python3.4/lib/python3.4/site-packages
+    - /home/travis/virtualenv/python3.6/lib/python3.6/site-packages
 
 script:
-  - tox
+  - python -m nose --verbose --tests=tests --no-byte-compile --with-coverage --cover-package=omnia --cover-min-percentage=90
+  - python -m pylint omnia --rcfile=.pylintrc -r y
