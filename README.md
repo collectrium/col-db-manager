@@ -36,3 +36,18 @@ with Transaction() as txn:
 
     # transaction is commited on context exit
 ```
+
+About tox
+
+Tox is a generic virtualenv management and test command line tool you can use for:
+
+checking your package installs correctly with different Python versions and interpreters
+running your tests in each of the environments, configuring your test tool of choice
+acting as a frontend to Continuous Integration servers, greatly reducing boilerplate and merging CI and shell-based testing.
+How to use tox:
+
+pip install tox # (in global environment)
+
+`tox` # install all dependencies and run tests
+
+`tox -r` reinstall dependencies and run tests

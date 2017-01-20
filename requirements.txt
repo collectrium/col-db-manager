@@ -8,7 +8,7 @@ SQLAlchemy==1.1.4
 
 # --- tests & debugging ---
 
-coverage==4.2
+coverage==4.3.4
 ipython==3.2.1
 line-profiler==2.0
 nose-pathmunge==0.1.2
